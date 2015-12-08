@@ -1,0 +1,33 @@
+.main .container {
+    padding: 0 0
+}
+.table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0.4vw 0vh;
+}
+.row {
+    display: table-row;
+}
+.col {
+	text-decoration: none;
+	text-align: center;
+    display: table-cell;
+    border: black solid;
+    padding:1% 3% 1% 3%;
+    margin: 0;
+}
+#header, #content, #footer, .widget {
+    overflow: hidden;
+}
+#button-all {
+	font-size: 150%;
+	color: white;
+	background:#44c0c2;
+	text-decoration: none;
+	padding: 1% 5% 1% 5%;
+	float:right;
+	border:black solid #44c0c2;
+	border-radius: 100000px;
+	margin-top: 1%;
+}
