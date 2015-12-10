@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script type="text/javascript">
+    function unhide(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+    item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }}
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        <p class="text_header">Benjamin Midyette</p>
+        <p style="margin-top:-50px">Computer/Network Engineer, Web Developer</p>
+    </div>
+
+    <div class="content" align="left">
+        <p style="padding-top:20px">
+            <a href="javascript:unhide('link')" class="button">This is a link</a><br><br>
+            <a href="javascript:unhide('about')" class="button">About</a>
+        </p>
+    </div>
+
+    <div id="Resume" class="content2"></div>
+
+    <div id="link" class="hidden" style="position:absolute; left:300px; margin-top:-700px;">
+            <img alt="A Link" src="pictures/link.png" height="420" width="420">     
+    </div>
+
+    <div id="about" class="hidden">
+        <div class="content3">
+            <p>This is the about section.</p>
+            <p>It is currently still being worked on.</p>
+        </div>
+    </div>      
+    </body>
+</html>

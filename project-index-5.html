@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PROJECT-1 </title>
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
+  <script src="../jquery-1.11.3.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript"> <!-- DE Y CHO NAY -->
+    function unhide(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+    item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }}
+  </script>
+
+</head>
+<body>
+<div class="container">
+  <div class="main container" style="padding:0px; margin:1% 0% 0% 0%;width:100%;">
+        <div class="table">
+          <div class="row" style="width: 100vw;margin-bottom: 1%;height: 20vh;">
+            <div class="col col-xs-10" style="float:none;background-color: #44c0c2;">
+              <h1 style="font-size: 3.4vmin;color:white;font-family: Arial;margin:0px;text-align: justify;">
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+            </div>
+            <div class="col col-xs-2" style="float:none;background-color: #44c0c2;">
+              <h1 style="font-size: 8vmin;color:white;font-family: Yanone Kaffeesatz;margin:0px;">999</h1>
+            </div>  
+          </div> 
+        </div>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+        <img src="img/pic.jpg" style="width:100%;height:44vmin;margin:5% 0% 0% 0%;" class="tagtag">
+  </div>
+  <div class="col-sm-8 col-xs-12"> 
+      <div class="container" style="padding:0px; margin:2.5% 0% 2% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterA.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p style="margin-right: 24%; padding-left: 2%;"> Answer 1<span id="percentage-line">100%</span></p>
+      </div>
+   
+    </div>
+    <div class="container" style="padding:0px; margin:2.5% 0% 2% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterB.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p style="margin-right: 24%; padding-left: 2%;"> Answer 1 <span id="percentage-line">100%</span></p>
+      </div>
+   
+    </div>
+    <div class="container" style="padding:0px; margin:2.5% 0% 2% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterC.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p style="margin-right: 24%; padding-left: 2%;"> Answer 1 <span id="percentage-line">100%</span></p>
+      </div>
+   
+    </div>
+    <div class="container" style="padding:0px; margin:2.5% 0% 0% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterD.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p style="margin-right: 24%; padding-left: 2%;"> Answer 1 <span id="percentage-line">100%</span></p>
+      </div>
+   
+    </div>
+  </div>
+          
+        <div class="table">
+          <div class="row" style="width: 100vw;margin-bottom: 5%;padding-top: 5%;">
+            <div class="col-xs-4"  style="margin-top:2%">
+              <a href="javascript:unhide('showA');javascript:unhide('showB');javascript:unhide('showC');javascript:unhide('showD');" class="button" id="button-all">Button 1</a>
+                 <!-- FIXED -->
+            </div>
+            <div class="col-xs-4"  style="margin-top:2%">
+              <a href="javascript:unhide('answer')" class="button" id="button-all">Button 2</a>
+            </div>
+            <div class="col-xs-4"  style="margin-top:2%">
+              <a href="javascript:void(0);" id="button-all">Button 3</a>
+            </div>
+            <div class="col-xs-4" style="margin-top:2%; float:right;">
+              <a href="javascript:void(0);" id="button-all" class="active">Button 4</a>
+            </div>
+          </div>    
+        </div> 
+</div> 
+<script>
+  $("#button-all").click(function() {
+    $(this).addClass("active");
+  });
+</script>
+</body> 
+<footer>   
+</footer>

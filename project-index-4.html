@@ -39,17 +39,61 @@
           </div> 
         </div>
   </div>
-        <img src="img/pic.jpg" style="width: 100%;height:65vh;">
-
-          
+    
+ <div class="container" style="padding:0px; margin:2.5% 0% 0% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterA.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p> Answer 1 <span id="percentage-line">100%</span></p>
+      </div>
+   
+  </div>
+  <div class="container" style="padding:0px; margin:2.5% 0% 0% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterB.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p> Answer 1 <span id="percentage-line">100%</span></p>
+      </div>
+   
+  </div>
+  <div class="container" style="padding:0px; margin:2.5% 0% 0% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterC.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p> Answer 1 <span id="percentage-line">100%</span></p>
+      </div>
+   
+  </div>
+  <div class="container" style="padding:0px; margin:2.5% 0% 0% 0%;width:100%;">
+    
+      <div class="col-xs-11" style="margin:0% 0% 0% 6%;" id="line">
+      <img src="img/LetterD.png" style="float:left;width:10vmin;height: auto;margin-top: -1%;margin-left:-1%;">
+      <!-- <p class="col-xs-1" style="font-size: 100%;"> A</p>
+ -->        <p> Answer 1 <span id="percentage-line">100%</span></p>
+      </div>
+   
+  </div>
         <div class="table">
           <div class="row" style="width: 100vw;margin-bottom: 5%;padding-top: 5%;">
+            <div class="col-xs-4"  style="margin-top:2%">
+              <a href="javascript:unhide('showA');javascript:unhide('showB');javascript:unhide('showC');javascript:unhide('showD');" class="button" id="button-all">Button 1</a>
+                 <!-- FIXED -->
+            </div>
+            <div class="col-xs-4"  style="margin-top:2%">
+              <a href="javascript:unhide('answer')" class="button" id="button-all">Button 2</a>
+            </div>
+            <div class="col-xs-4"  style="margin-top:2%">
+              <a href="javascript:void(0);" id="button-all">Button 3</a>
+            </div>
             <div class="col-xs-4" style="margin-top:2%; float:right;">
               <a href="javascript:void(0);" id="button-all" class="active">Button 4</a>
             </div>
           </div>    
         </div> 
-</div> 
+</div>
 <script>
   $("#button-all").click(function() {
     $(this).addClass("active");

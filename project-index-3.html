@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PROJECT-1 </title>
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
+  <script src="../jquery-1.11.3.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript"> <!-- DE Y CHO NAY -->
+    function unhide(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+    item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }}
+  </script>
+
+</head>
+<body>
+<div class="container">
+  <div class="main container" style="padding:0px; margin:1% 0% 0% 0%;width:100%;">
+        <div class="table">
+          <div class="row" style="width: 100vw;margin-bottom: 1%;height: 20vh;">
+            <div class="col col-xs-10" style="float:none;background-color: #44c0c2;">
+              <h1 style="font-size: 3.4vmin;color:white;font-family: Arial;margin:0px;text-align: justify;">
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+            </div>
+            <div class="col col-xs-2" style="float:none;background-color: #44c0c2;">
+              <h1 style="font-size: 8vmin;color:white;font-family: Yanone Kaffeesatz;margin:0px;">999</h1>
+            </div>  
+          </div> 
+        </div> 
+   </div>
+
+        <div class="table">
+          <div class="row" style="width: 100vw;margin-bottom: 5%;column-gap: 10%;">
+            <div class="col col-xs-12 col-sm-6" id="ABCD">
+              <div class="col-xs-3">
+                <h1 style="font-size: 8vw;margin:-10% 0% 0% 0%;font-family:Arial;color:#485460;">A</h1>
+              </div>
+              <div class="col-xs-9 col-xs-pull-1" style="position:relative">
+                <img src="img/pic.jpg" id="ABCD-img">
+                <div class="hidden" id="showA">
+                	<p id="percentage">00 %</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6" id="ABCD">
+              <div class="col-xs-3">
+                <h1 style="font-size: 8vw;margin:-10% 0% 0% 0%;font-family:Arial;color:#485460;">B</h1>
+              </div>
+              <div class="col-xs-9 col-xs-pull-1">
+                <img src="img/random.jpg" id="ABCD-img">
+                <div class="hidden" id="showB">
+                	<p id="percentage">00 %</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6" id="ABCD">
+              <div class="col-xs-3">
+                <h1 style="font-size: 8vw;margin:-10% 0% 0% 0%;font-family:Arial;color:#485460;">C</h1>
+              </div>
+              <div class="col-xs-9 col-xs-pull-1">
+                <img src="img/random.jpg" id="ABCD-img">
+                <div class="hidden" id="showC">
+                	<p id="percentage">00 %</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-12 col-sm-6" id="ABCD">
+              <div class="col-xs-3">
+                <h1 style="font-size: 8vw;margin:-10% 0% 0% 0%;font-family:Arial;color:#485460;">D</h1>
+              </div>
+              <div class="col-xs-9 col-xs-pull-1">
+                <img src="img/pic.jpg" id="ABCD-img">
+                <div class="hidden" id="showD">
+                	<p id="percentage">00 %</p>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+            <div class="row" style="width: 100vw;margin-bottom: 5%;padding-top: 5%;">
+              <div class="col-xs-4"  style="margin-top:2%">
+                <a href="javascript:unhide('showA');javascript:unhide('showB');javascript:unhide('showC');javascript:unhide('showD');" class="button" id="button-all">Button 1</a>
+                 <!-- FIXED -->
+              </div>
+              <div class="col-xs-4"  style="margin-top:2%">
+                <a href="javascript:unhide('answer')" class="button" id="button-all">Button 2</a>
+              </div>
+              <div class="col-xs-4"  style="margin-top:2%">
+                <a href="javascript:void(0);" id="button-all">Button 3</a>
+              </div>
+              <div class="hidden" id="answer">
+              <div class="col-xs-2" style="margin-top:2%">
+                <a href="javascript:void(0);" id="rec-button">A</a>
+              </div>
+              <div class="col-xs-2" style="margin-top:2%">
+                <a href="javascript:void(0);" id="rec-button">B</a>
+              </div>
+              <div class="col-xs-2" style="margin-top:2%">
+                <a href="javascript:void(0);" id="rec-button">C</a>
+              </div>
+              <div class="col-xs-2" style="margin-top:2%">
+                <a href="javascript:void(0);" id="rec-button">D</a>
+              </div>
+              </div>
+              <div class="col-xs-4" style="margin-top:2%; float:right;">
+                <a href="javascript:void(0);" id="button-all" class="active">Button 4</a>
+              </div>
+          </div>    
+        </div> 
+</div>
+    <script>
+  $("#button-all").click(function() {
+    $(this).addClass("active");
+  });
+  </script>
+ </body> 
+ <footer>   
+ </footer>
