@@ -14,7 +14,7 @@
 	text-align: center;
     display: table-cell;
     border: #2c7381 solid 1vh;
-    border-radius: 40px;
+    border-radius: 30px;
     padding:1% 1% 1% 1%;
     vertical-align: middle;
 }
@@ -94,11 +94,11 @@
 #ABCD-img {
 	border: black hidden ;
 	border-radius: 10px;
-	width:110%;
-	height: 25vh;
+	width:100%;
+	height:25vh;
 }
 
-@media screen and (min-width: 740px) {
+/*@media screen and (min-width: 740px) {
     #ABCD-img {
 	border: black hidden ;
 	border-radius: 10px;
@@ -106,19 +106,19 @@
 	height: 25vh;
 }
 }
-
+*/
 
 #percentage {
 	margin: 0px;
-	font-size: 6vh;
-	padding:0% 2% 0% 2%;
+	font-size: 7vh;
+	padding:0% 13% 0% 2%;
 	color:black;
 	background: white;
 	position:absolute;
-	bottom:0px;
+	bottom:-1%;
 	right:-11%;
-	border: #000000 hidden;
-	border-radius: 10px;
+	/*border: #000000 hidden;
+	border-radius: 10px;*/
 }
 
 #rec-button {
